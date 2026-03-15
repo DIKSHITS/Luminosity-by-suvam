@@ -2,9 +2,8 @@ export function initHero() {
   const container = document.querySelector('.hero-bg-container');
   // I will use the generated images
   const images = [
-    '/assets/images/hero_image_bengali_1773571565971.png',
-    '/assets/images/ritual_saatpaak_1773571621464.png',
-    '/assets/images/about_image_bengali_1773571584146.png',
+  
+    '/assets/images/d7.jpeg',
   ];
 
   // Inject images
