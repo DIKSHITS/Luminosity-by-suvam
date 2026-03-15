@@ -126,11 +126,17 @@ img {
 
 .nav-logo {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--accent-gold);
+}
+
+.logo-image {
+  height: 100px;
+  width: 130px;
+  transition: all var(--transition);
 }
 
 .nav-links {
@@ -924,6 +930,10 @@ img {
     font-size: 1.25rem;
   }
 
+  .logo-image {
+    height: 90px;
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
@@ -1161,6 +1171,10 @@ img {
 
   .nav-logo {
     font-size: 1.1rem;
+  }
+
+  .logo-image {
+    height: 85px;
   }
 
   .nav-links {
