@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumnosity by Suvam — Luxury Bengali Wedding Photography</title>
+  <meta name="description"
+    content="Lumnosity by Suvam — Luxury Bengali Wedding Photography & Cinematography. Capturing timeless love stories.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body class="loading bengali-theme">
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Lumnosity</a>
+
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#films">Films</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Inquire</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section-scroll">
+      <!-- Image slider background container -->
+      <div class="hero-bg-container">
+        <!-- JS will inject images here -->
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section-padding section-scroll">
+      <div class="container about-grid">
+        <div class="about-image-wrapper parallax-wrap">
+          <img src="/assets/images/about_image_bengali_1773571584146.png" alt="Emotional Couple Portrait"
+            class="about-img">
+          <div class="gold-border-decor"></div>
+          <div class="alpana-motif top-left"></div>
+        </div>
+        <div class="about-content">
+          <h2 class="section-title fade-up">Capturing Timeless Bengali Love Stories</h2>
+          <p class="fade-up">
+            At Lumnosity by Suvam, we believe your wedding day is a masterpiece waiting to be documented.
+            From the emotional nuances of Shubho Drishti to the vibrant joy of Saat Paak, we weave traditional rituals
+            with modern elegance.
+            Inspired by luxury editorial magazines, our cinematic storytelling ensures you look back at not just how you
+            looked,
+            but exactly how you felt.
+          </p>
+          <img src="/assets/images/ritual_sindoor_1773571604021.png" alt="Detail" class="about-small-img fade-up">
+        </div>
+      </div>
+    </section>
+
+    <!-- MOMENTS IN MOTION (Image Marquee) -->
+    <section class="moments-in-motion">
+      <div class="ticker-wrapper">
+        <div class="ticker image-ticker">
+
+          <!-- wedding frames -->
+          <img src="/assets/images/ritual_saatpaak_1773571621464.png" loading="lazy">
+          <img src="/assets/images/ritual_sindoor_1773571604021.png" loading="lazy">
+          <img src="/assets/images/about_image_bengali_1773571584146.png" loading="lazy">
+          <img src="/assets/images/hero_image_bengali_1773571565971.png" loading="lazy">
+
+          <!-- duplicates for infinite loop -->
+          <img src="/assets/images/ritual_saatpaak_1773571621464.png" loading="lazy">
+          <img src="/assets/images/ritual_sindoor_1773571604021.png" loading="lazy">
+          <img src="/assets/images/about_image_bengali_1773571584146.png" loading="lazy">
+          <img src="/assets/images/hero_image_bengali_1773571565971.png" loading="lazy">
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RITUALS STORYTELLING (NEW) -->
+    <section id="rituals" class="rituals section-padding section-scroll">
+      <div class="container">
+        <h2 class="section-title center fade-up">Bengali Wedding Stories</h2>
+        <p class="center fade-up" style="max-width: 600px; margin: 0 auto 3rem auto;">Highlighting the eternal beauty of
+          traditional customs bound by the grace of luxury storytelling.</p>
+
+        <div class="rituals-grid fade-up">
+          <div class="ritual-card">
+            <img src="/assets/images/about_image_bengali_1773571584146.png" alt="Shubho Drishti">
+            <div class="ritual-overlay">
+              <h3>Shubho Drishti</h3>
+              <p>The auspicious first glance</p>
+            </div>
+          </div>
+          <div class="ritual-card">
+            <img src="/assets/images/ritual_saatpaak_1773571621464.png" alt="Saat Paak">
+            <div class="ritual-overlay">
+              <h3>Saat Paak</h3>
+              <p>Seven vows of eternity</p>
+            </div>
+          </div>
+          <div class="ritual-card">
+            <img src="/assets/images/ritual_sindoor_1773571604021.png" alt="Sindoor Daan">
+            <div class="ritual-overlay">
+              <h3>Sindoor Daan</h3>
+              <p>The mark of forever</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio section-padding section-scroll">
+      <div class="container">
+        <h2 class="section-title center fade-up">Wedding Portfolio</h2>
+        <div class="portfolio-categories fade-up">
+          <button class="active">All Weddings</button>
+          <button>Bengali Weddings</button>
+          <button>Pre Wedding</button>
+          <button>Engagement</button>
+          <button>Cinematic Moments</button>
+        </div>
+        <!-- Masonry Grid -->
+        <div class="portfolio-grid fade-up" id="portfolio-gallery">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED FILMS -->
+    <section id="films" class="films section-padding section-scroll">
+      <div class="container">
+        <h2 class="section-title center fade-up">Featured Wedding Films</h2>
+        <div class="films-grid fade-up">
+          <!-- Video 1 -->
+          <div class="film-card">
+            <div class="film-thumb">
+              <img src="/assets/images/hero_image_bengali_1773571565971.png" alt="Film Thumbnail">
+              <div class="play-btn-overlay">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+            <div class="film-info">
+              <h3>Aditi & Rohan</h3>
+              <p>Royal Kolkata Wedding</p>
+            </div>
+          </div>
+          <!-- Video 2 -->
+          <div class="film-card">
+            <div class="film-thumb">
+              <img src="/assets/images/ritual_saatpaak_1773571621464.png" alt="Film Thumbnail">
+              <div class="play-btn-overlay">
+                <svg viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z" fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+            <div class="film-info">
+              <h3>Priya & Suman</h3>
+              <p>Heritage Temple Ceremony</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials section-padding section-scroll">
+      <div class="container slider-container fade-up">
+        <div class="quote-mark">“</div>
+        <div class="testimonial-slider" id="testimonial-slider">
+          <!-- Slided items via JS -->
+          <div class="testimonial active">
+            <p class="review">"Suvam and the team beautifully captured our traditional customs with such a modern,
+              premium touch. Looking at our photos feels like watching a grand cinematic film."</p>
+            <div class="couple">
+              <img src="/assets/images/about_image_bengali_1773571584146.png" alt="Couple">
+              <h4>Aditi & Rohan</h4>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p class="review">"The attention to detail and editorial eye was absolutely incredible. Lumnosity elevated
+              our entire Bengali wedding experience and delivered magazine-worthy imagery."</p>
+            <div class="couple">
+              <img src="/assets/images/hero_image_bengali_1773571565971.png" alt="Couple">
+              <h4>Priya & Suman</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience section-padding section-scroll">
+      <div class="container">
+        <h2 class="section-title center fade-up">Wedding Experience</h2>
+        <div class="experience-grid fade-up">
+          <div class="exp-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
+              </svg>
+            </div>
+            <h3>Consultation</h3>
+            <p>Understanding your profound love story and bespoke vision for the perfect day.</p>
+          </div>
+          <div class="exp-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+            </div>
+            <h3>Wedding Coverage</h3>
+            <p>Unobtrusive, documentary-style coverage ensuring authentic traditional moments are preserved.</p>
+          </div>
+          <div class="exp-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+              </svg>
+            </div>
+            <h3>Cinematic Editing</h3>
+            <p>Expert cinematic editing tailored to reflect an elegant, emotional, and high-fashion mood.</p>
+          </div>
+          <div class="exp-item">
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3>Luxury Albums</h3>
+            <p>Premium artisan aesthetic collections housing your memories timelessly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section-padding section-scroll">
+      <div class="container contact-grid">
+        <div class="contact-text fade-up">
+          <h2 class="section-title">Inquire</h2>
+          <p>We take a limited number of commissions each year to ensure the highest quality and dedication to each
+            couple. Reach out to see if your dates align.</p>
+          <div class="contact-info">
+            <p>Email: hello@lumnosity.studio</p>
+            <p>Location: Worldwide / Destination</p>
+          </div>
+        </div>
+        <div class="contact-form-wrap fade-up">
+          <form id="contact-form" class="luxury-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required placeholder=" ">
+              <label for="name">Names</label>
+              <div class="focus-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required placeholder=" ">
+              <label for="email">Email</label>
+              <div class="focus-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" required placeholder=" ">
+              <label for="phone">Phone</label>
+              <div class="focus-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="date" id="date" name="wedding_date" required placeholder=" " class="date-input">
+              <label for="date" class="date-label">Wedding Date</label>
+              <div class="focus-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="location" name="location" required placeholder=" ">
+              <label for="location">Wedding Location</label>
+              <div class="focus-line"></div>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+              <label for="message">Your Story / Message</label>
+              <div class="focus-line"></div>
+            </div>
+            <button type="submit" class="submit-btn" id="submit-btn">
+              <span class="btn-text">Send Inquiry</span>
+              <div class="spinner"></div>
+            </button>
+            <div id="form-msg" class="form-msg"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-logo">Lumnosity</div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#films">Films</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lumnosity by Suvam. Luxury Wedding Photography & Cinematography.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img src="" alt="Fullscreen Portfolio Image" class="lightbox-img">
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
