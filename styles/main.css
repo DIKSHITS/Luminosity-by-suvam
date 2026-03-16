@@ -369,7 +369,7 @@ img {
 .ticker {
   display: inline-flex;
   white-space: nowrap;
-  animation: marquee 24s linear infinite; /* Animation speed 20-25s */
+  animation: marquee 15s linear infinite; /* Animation speed 15s for continuous movement */
   background: #111;
   padding: 30px 0;
   position: relative;
@@ -399,8 +399,10 @@ img {
 
 .ticker img {
   height: 300px; /* Large cinematic reel */
+  aspect-ratio: 4 / 3;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
+  flex-shrink: 0;
   margin: 0 15px; /* Consistent spacing for perfect loop */
   filter: grayscale(60%) contrast(1.1);
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.4s ease, box-shadow 0.4s ease;
@@ -676,6 +678,32 @@ img {
   font-size: 1.2rem;
 }
 
+/* FAQ */
+.faq {
+  background: var(--bg-dark);
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.faq-item {
+  background: var(--bg-cream);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-gold);
+}
+.faq-item h3 {
+  margin-bottom: 1rem;
+  color: var(--text-white);
+  font-size: 1.25rem;
+}
+.faq-item p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
 /* Contact */
 .contact-grid {
   display: grid;
@@ -886,6 +914,10 @@ img {
 
   .experience-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
   }
 
   .portfolio-grid {
