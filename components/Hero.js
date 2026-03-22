@@ -2,9 +2,9 @@ export function initHero() {
   const container = document.querySelector('.hero-bg-container');
   // Import images so Vite processes them correctly
   const images = [
-    './assets/images/d8.jpeg',
+    './assets/images/d1.jpeg',
     './assets/images/d7.jpeg',
-    './assets/images/d11.jpeg',
+    './assets/images/d9.jpeg',
   ];
 
   // Inject images

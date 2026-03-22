@@ -6,6 +6,7 @@ export function initPortfolio() {
     { src: '/assets/images/hero_image_bengali_1773571565971.png', cat: 'pre wedding', tall: false },
     { src: '/assets/images/portfolio_1_warm_1773571394072.png', cat: 'Bengali Weddings', tall: false },
     { src: '/assets/images/about_image_warm_1773571378541.png', cat: 'engagement', tall: true }
+    
   ];
 
   const gallery = document.getElementById('portfolio-gallery');

@@ -109,13 +109,12 @@ img {
   padding: 2rem 5%;
   z-index: 1000;
   transition: all var(--transition);
+  background: white;
 }
 
 .navbar.glass {
-  background: rgba(246, 241, 233, 0.85); /* Ivory semi-transparent */
-  backdrop-filter: blur(10px);
+  background: white;
   padding: 1rem 5%;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .nav-container {
@@ -134,8 +133,8 @@ img {
 }
 
 .logo-image {
-  height: 100px;
-  width: 130px;
+  height: 40px;
+  width: 200px;
   transition: all var(--transition);
 }
 
@@ -214,13 +213,13 @@ img {
   height: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 2s ease-in-out, transform 10s linear;
-  transform: scale(1.05); /* Slight zoom start */
+  transition: opacity 2s ease-in-out;
+  image-rendering: crisp-edges;
 }
 .hero-bg-slide.active {
   opacity: 1;
-  transform: scale(1); /* Parallax/zoom out */
 }
 
 .hero-overlay {
@@ -936,6 +935,22 @@ img {
     gap: 2.5rem;
   }
 }
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-social a {
+  color: var(--text-white);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--accent-gold);
+  transform: translateY(-3px);
+}
 
 @media (max-width: 768px) {
   :root {
@@ -955,6 +970,7 @@ img {
   }
 
   .navbar.glass {
+    background: white;
     padding: 1rem 6%;
   }
 
@@ -1155,6 +1171,7 @@ img {
   .footer-social a {
     font-size: 0.9rem;
   }
+  
 
   /* Lightbox Mobile */
   .lightbox-img {
@@ -1198,6 +1215,7 @@ img {
   }
 
   .navbar.glass {
+    background: white;
     padding: 0.8rem 5%;
   }
 
@@ -1266,10 +1284,7 @@ img {
     padding: 2rem 5% 1.5rem 5%;
   }
 
-  .footer-logo {
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-  }
+  
 }
 
 @media (max-width: 360px) {
