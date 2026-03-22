@@ -133,8 +133,8 @@ img {
 }
 
 .logo-image {
-  height: 40px;
-  width: 200px;
+  height: 45px;
+  width: 190px;
   transition: all var(--transition);
 }
 
