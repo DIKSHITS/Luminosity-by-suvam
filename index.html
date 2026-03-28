@@ -229,7 +229,7 @@
         <li><a href="#films">Films</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Inquire</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
   </nav>
@@ -256,8 +256,9 @@
           <div class="alpana-motif top-left"></div>
         </div>
         <div class="about-content">
+          <span class="about-kicker fade-up">Luxury Visual Storytelling</span>
           <h2 class="section-title fade-up">Capturing Timeless Moments</h2>
-          <p class="fade-up">
+          <p class="about-lead fade-up">
             At Luminosity by suvam, we believe every moment is a masterpiece waiting to be documented.
             From intimate portraits to grand events, we weave authentic storytelling
             with modern elegance.
@@ -293,31 +294,34 @@
 
     <!-- RITUALS STORYTELLING (NEW) -->
     <section id="rituals" class="rituals section-padding section-scroll">
-      <div class="container">
+      <div class="rituals-head container">
         <h2 class="section-title center fade-up">Photography Stories</h2>
-        <p class="center fade-up" style="max-width: 600px; margin: 0 auto 3rem auto;">Highlighting the eternal beauty of
-          authentic moments bound by the grace of luxury storytelling.</p>
+      </div>
 
+      <div class="rituals-grid-wrap">
         <div class="rituals-grid fade-up">
           <div class="ritual-card">
             <img src="/assets/images/about_image_bengali_1773571584146.png" alt="Portrait photography session">
             <div class="ritual-overlay">
+              <span class="ritual-meta">Story 01</span>
               <h3>Portrait Sessions</h3>
-              <p>Capturing personality and emotion</p>
+              <p>Unposed expressions, natural movement, and authentic personality in every portrait.</p>
             </div>
           </div>
           <div class="ritual-card">
             <img src="/assets/images/ritual_saatpaak_1773571621464.png" alt="Event photography coverage">
             <div class="ritual-overlay">
+              <span class="ritual-meta">Story 02</span>
               <h3>Event Coverage</h3>
-              <p>Documenting life's special moments</p>
+              <p>Documentary-style frames that preserve real reactions and once-in-a-lifetime energy.</p>
             </div>
           </div>
           <div class="ritual-card">
             <img src="/assets/images/ritual_sindoor_1773571604021.png" alt="Commercial photography work">
             <div class="ritual-overlay">
+              <span class="ritual-meta">Story 03</span>
               <h3>Commercial Work</h3>
-              <p>Professional brand and product photography</p>
+              <p>Clean visual direction for brands and products with high-end editorial finish.</p>
             </div>
           </div>
         </div>
@@ -328,12 +332,15 @@
     <section id="portfolio" class="portfolio section-padding section-scroll">
       <div class="container">
         <h2 class="section-title center fade-up">Photography Portfolio</h2>
+      </div>
+
+      <div class="portfolio-shell">
         <div class="portfolio-categories fade-up">
-          <button class="active">All Work</button>
-          <button>Portraits</button>
-          <button>Events</button>
-          <button>Commercial</button>
-          <button>Cinematic</button>
+          <button class="active" data-filter="all">All Work</button>
+          <button data-filter="portraits">Portraits</button>
+          <button data-filter="events">Events</button>
+          <button data-filter="commercial">Commercial</button>
+          <button data-filter="cinematic">Cinematic</button>
         </div>
         <!-- Masonry Grid -->
         <div class="portfolio-grid fade-up" id="portfolio-gallery">
@@ -346,6 +353,10 @@
     <section id="films" class="films section-padding section-scroll">
       <div class="container">
         <h2 class="section-title center fade-up">Featured Films</h2>
+        <p class="films-lead center fade-up">Signature wedding films crafted with emotion, elegance, and editorial cinematic language.</p>
+      </div>
+
+      <div class="films-shell">
         <div class="films-grid fade-up">
           <!-- Video 1 -->
           <div class="film-card">
@@ -459,30 +470,61 @@
     <section id="faq" class="faq section-padding section-scroll">
       <div class="container">
         <h2 class="section-title center fade-up">Frequently Asked Questions</h2>
+        <p class="faq-subtitle center fade-up">Quick answers to the most common questions about our process, style, and bookings.</p>
         <div class="faq-grid fade-up">
           <div class="faq-item">
-            <h3>What makes Luminosity by suvam different from other photographers?</h3>
-            <p>We specialize in luxury photography with a cinematic approach, combining authentic storytelling with modern editorial styling. Our limited commissions ensure personalized attention to every client's unique vision.</p>
+            <button class="faq-question" aria-expanded="false" type="button">
+              <span>What makes Luminosity by suvam different from other photographers?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>We specialize in luxury photography with a cinematic approach, combining authentic storytelling with modern editorial styling. Our limited commissions ensure personalized attention to every client's unique vision.</p>
+            </div>
           </div>
           <div class="faq-item">
-            <h3>Do you cover events outside Kolkata?</h3>
-            <p>Yes, we travel for events and shoots across India. Additional travel fees may apply depending on the location and requirements.</p>
+            <button class="faq-question" aria-expanded="false" type="button">
+              <span>Do you cover events outside Kolkata?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Yes, we travel for events and shoots across India. Additional travel fees may apply depending on the location and requirements.</p>
+            </div>
           </div>
           <div class="faq-item">
-            <h3>What is included in your photography package?</h3>
-            <p>Our packages include consultation, full-day coverage, post-production editing, high-resolution photos, and luxury presentation. Cinematography and additional services are available as add-ons.</p>
+            <button class="faq-question" aria-expanded="false" type="button">
+              <span>What is included in your photography package?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Our packages include consultation, full-day coverage, post-production editing, high-resolution photos, and luxury presentation. Cinematography and additional services are available as add-ons.</p>
+            </div>
           </div>
           <div class="faq-item">
-            <h3>How far in advance should we book your services?</h3>
-            <p>We recommend booking 4-8 weeks in advance for optimal availability. However, we can accommodate rush projects based on our schedule.</p>
+            <button class="faq-question" aria-expanded="false" type="button">
+              <span>How far in advance should we book your services?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>We recommend booking 4-8 weeks in advance for optimal availability. However, we can accommodate rush projects based on our schedule.</p>
+            </div>
           </div>
           <div class="faq-item">
-            <h3>Do you provide raw/unedited photos?</h3>
-            <p>Upon request, we can provide a selection of raw photos along with the edited ones. All final edits are included in our packages.</p>
+            <button class="faq-question" aria-expanded="false" type="button">
+              <span>Do you provide raw/unedited photos?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>Upon request, we can provide a selection of raw photos along with the edited ones. All final edits are included in our packages.</p>
+            </div>
           </div>
           <div class="faq-item">
-            <h3>What is your photography style?</h3>
-            <p>We blend documentary storytelling with luxury editorial photography, capturing authentic moments while creating magazine-worthy images that reflect your personal style.</p>
+            <button class="faq-question" aria-expanded="false" type="button">
+              <span>What is your photography style?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" aria-hidden="true">
+              <p>We blend documentary storytelling with luxury editorial photography, capturing authentic moments while creating magazine-worthy images that reflect your personal style.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -492,12 +534,18 @@
     <section id="contact" class="contact section-padding section-scroll">
       <div class="container contact-grid">
         <div class="contact-text fade-up">
-          <h2 class="section-title">Inquire</h2>
-          <p>We take a limited number of projects each year to ensure the highest quality and dedication to each
-            client. Reach out to discuss your vision.</p>
+          <span class="contact-kicker">Let’s Create Something Timeless</span>
+          <h2 class="section-title">Contact Us</h2>
+          <p class="contact-lead">We take a limited number of projects each year to ensure handcrafted quality for every story.
+            Share your vision and we will design a cinematic experience around it.</p>
+          <ul class="contact-points">
+            <li><i class="fa-regular fa-clock"></i> Fast response within 24 hours</li>
+            <li><i class="fa-solid fa-camera-retro"></i> Personalized photography direction</li>
+            <li><i class="fa-solid fa-film"></i> Luxury photo and film options</li>
+          </ul>
           <div class="contact-info">
-            <p>Email: luminositybysuvam@gmail.com</p>
-            <p>Location: Kolkata, West Bengal, India</p>
+            <p><i class="fa-regular fa-envelope"></i> luminositybysuvam@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Kolkata, West Bengal, India</p>
           </div>
         </div>
         <div class="contact-form-wrap fade-up">
@@ -546,24 +594,35 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-grid">
-      <div class="footer-logo">Luminosity by suvam</div>
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo-link" aria-label="Luminosity by Suvam Home">
+          <img src="/assets/images/logo1.png" alt="Luminosity by Suvam" class="footer-logo-image">
+        </a>
+        <div class="footer-logo">Luminosity by suvam</div>
+        <p class="footer-tagline">Luxury wedding photography and cinematic storytelling.</p>
+      </div>
       <div class="footer-nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#films">Films</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
-     <div class="footer-social">
-  <a href="https://www.instagram.com/luminosity_by_suvam?igsh=MXB2OWEzOXR1ODJudg==⁠" aria-label="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://youtube.com/@luminositybysuvam?si=5w7T2pXfeM7dg2SC" aria-label="YouTube">
-    <i class="fab fa-youtube"></i>
-  </a>
-</div>
+      <div class="footer-social-wrap">
+        <p class="footer-social-title">Follow Us</p>
+        <div class="footer-social">
+          <a class="footer-social-link is-instagram" href="https://www.instagram.com/luminosity_by_suvam?igsh=MXB2OWEzOXR1ODJudg==⁠" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a class="footer-social-link is-youtube" href="https://youtube.com/@luminositybysuvam?si=5w7T2pXfeM7dg2SC" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Luminosity by suvam.</p>
