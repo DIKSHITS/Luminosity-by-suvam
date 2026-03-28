@@ -3322,3 +3322,44 @@ svg {
     padding: 0.5rem 0.7rem;
   }
 }
+
+/* Medium Screen Footer Fix */
+@media (min-width: 561px) and (max-width: 1024px) {
+  .footer {
+    padding: 2.8rem 5% 1.8rem 5%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footer-brand,
+  .footer-nav,
+  .footer-social-wrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-nav ul {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .footer-social {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.85rem;
+  }
+
+  .footer-social-link {
+    min-width: 126px;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
