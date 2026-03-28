@@ -395,24 +395,37 @@
     <!-- TESTIMONIALS -->
     <section id="testimonials" class="testimonials section-padding section-scroll">
       <div class="container slider-container fade-up">
-        <div class="quote-mark">“</div>
-        <div class="testimonial-slider" id="testimonial-slider">
-          <!-- Slided items via JS -->
+        <h2 class="section-title center testimonial-title">Stories They Shared</h2>
+        <div class="testimonial-slider" id="testimonial-slider" aria-live="polite">
           <div class="testimonial active">
-            <p class="review">"Suvam and the team beautifully captured our special moments with such a modern,
-              premium touch. Looking at our photos feels like watching a grand cinematic film."</p>
-            <div class="couple">
-              <img src="/assets/images/about_image_bengali_1773571584146.png" alt="Couple">
-              <h4>Aditi & Rohan</h4>
-            </div>
+            <article class="testimonial-card">
+              <figure class="testimonial-media">
+                <img src="/assets/images/about_image_bengali_1773571584146.png" alt="Client portrait">
+              </figure>
+              <div class="testimonial-content">
+                <p class="testimonial-id">01 Simran &amp; Saiyam</p>
+                <p class="review">"We honestly could not have asked for better wedding photographers. From the very beginning, they made us feel so comfortable that it never felt like a photoshoot, it felt like family capturing our special moments. The entire shoot was full of fun, laughter, and ease, and their friendly, warm nature made everything so natural. They are genuinely kind, cooperative, and incredibly professional at the same time. Even the after-wedding service has been amazing, with so much care and patience. He truly feels like a brother to me now. Thank you for capturing our wedding so beautifully and for giving us memories we will cherish forever. Highly recommended!"</p>
+              </div>
+            </article>
           </div>
           <div class="testimonial">
-            <p class="review">"The attention to detail and editorial eye was absolutely incredible. Luminosity elevated
-              our entire experience and delivered magazine-worthy imagery."</p>
-            <div class="couple">
-              <img src="/assets/images/hero_image_bengali_1773571565971.png" alt="Couple">
-              <h4>Priya & Suman</h4>
-            </div>
+            <article class="testimonial-card">
+              <figure class="testimonial-media">
+                <img src="/assets/images/hero_image_bengali_1773571565971.png" alt="Client portrait">
+              </figure>
+              <div class="testimonial-content">
+                <p class="testimonial-id">02 Aakash &amp; Anwesha</p>
+                <p class="review">"Suvam and his team beautifully captured our engagement, making our special day even more memorable."</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="testimonial-meta">
+          <p class="testimonial-counter"><span class="testimonial-current">01</span><span class="testimonial-total">/02</span></p>
+          <div class="testimonial-nav" aria-label="Testimonial navigation">
+            <button type="button" class="testimonial-btn testimonial-prev" aria-label="Previous testimonial">&#8249;</button>
+            <button type="button" class="testimonial-btn testimonial-next" aria-label="Next testimonial">&#8250;</button>
           </div>
         </div>
       </div>
