@@ -153,6 +153,83 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Experience cards reveal animation
+  const experienceItems = document.querySelectorAll('.exp-item');
+  if (experienceItems.length) {
+    const experienceGrid = document.querySelector('.experience-grid');
+
+    gsap.fromTo(
+      experienceItems,
+      { y: 34, opacity: 0, scale: 0.97 },
+      {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 0.78,
+        stagger: 0.12,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '#experience',
+          start: 'top 80%'
+        }
+      }
+    );
+
+    if (experienceGrid) {
+      ScrollTrigger.create({
+        trigger: '#experience',
+        start: 'top 80%',
+        onEnter: () => experienceGrid.classList.add('is-animated'),
+        onEnterBack: () => experienceGrid.classList.add('is-animated')
+      });
+    }
+
+    const iconRings = document.querySelectorAll('.exp-item .icon-wrap');
+    gsap.fromTo(
+      iconRings,
+      { scale: 0.9, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 0.55,
+        stagger: 0.1,
+        ease: 'back.out(1.7)',
+        scrollTrigger: {
+          trigger: '#experience',
+          start: 'top 78%'
+        }
+      }
+    );
+
+    // Subtle 3D tilt on hover for desktop
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      experienceItems.forEach((item) => {
+        item.addEventListener('mousemove', (e) => {
+          const rect = item.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width - 0.5) * 8;
+          const y = ((e.clientY - rect.top) / rect.height - 0.5) * -8;
+
+          gsap.to(item, {
+            rotateX: y,
+            rotateY: x,
+            transformPerspective: 800,
+            duration: 0.25,
+            ease: 'power2.out'
+          });
+        });
+
+        item.addEventListener('mouseleave', () => {
+          gsap.to(item, {
+            rotateX: 0,
+            rotateY: 0,
+            duration: 0.35,
+            ease: 'power2.out'
+          });
+        });
+      });
+    }
+  }
+
   // FAQ cards reveal animation
   if (faqItems.length) {
     gsap.fromTo(

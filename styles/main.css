@@ -830,7 +830,7 @@ img {
   left: 1rem;
   width: 100px;
   height: 100px;
-  background-image: radial-gradient(circle, transparent 20%, rgba(212,175,55,0.1) 20%, rgba(212,175,55,0.1) 80%, transparent 80%), radial-gradient(circle, transparent 20%, rgba(212,175,55,0.1) 20%, rgba(212,175,55,0.1) 80%, transparent 80%);
+  background-image: radial-gradient(circle, transparent 20%, rgba(212, 175, 55,0.1) 20%, rgba(212, 175, 55,0.1) 80%, transparent 80%), radial-gradient(circle, transparent 20%, rgba(212, 175, 55,0.1) 20%, rgba(212, 175, 55,0.1) 80%, transparent 80%);
   background-size: 50px 50px;
   background-position: 0 0, 25px 25px;
   z-index: 3;
@@ -963,7 +963,7 @@ img {
 .ticker img:hover {
   filter: grayscale(0%) contrast(1.1);
   transform: scale(1.05); /* slightly zoom the image */
-  box-shadow: 0 0 25px rgba(212,175,55,0.5); /* Gold glow */
+  box-shadow: 0 0 25px rgba(212, 175, 55,0.5); /* Gold glow */
   z-index: 5;
   position: relative;
 }
@@ -1432,7 +1432,7 @@ img {
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   width: 68px; height: 68px;
-  background: radial-gradient(circle at 30% 30%, #f6d777, #c99d2f);
+  background: radial-gradient(circle at 30% 30%, #f6d777, #d4af37);
   box-shadow: 0 10px 26px rgba(45, 32, 16, 0.3);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -1835,7 +1835,7 @@ img {
 
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
-  background: linear-gradient(135deg, #d4af37, #e7cb6d);
+  background: linear-gradient(135deg, #d4af37, #e8cc6a);
   color: #2b1d10;
 }
 
@@ -2419,7 +2419,7 @@ img {
 .lightbox-img {
   max-width: 90%;
   max-height: 90%;
-  box-shadow: 0 0 50px rgba(212,175,55,0.1);
+  box-shadow: 0 0 50px rgba(212, 175, 55,0.1);
   object-fit: contain;
 }
 
