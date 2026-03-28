@@ -3279,3 +3279,46 @@ svg {
     max-width: 100%;
   }
 }
+
+/* Footer Social Icons Always Visible */
+.footer-social {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.footer-social-link {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: rgba(243, 220, 163, 0.95) !important;
+}
+
+.footer-social-link i {
+  display: inline-block !important;
+  font-size: 1.05rem;
+  line-height: 1;
+  color: currentColor !important;
+}
+
+@media (max-width: 768px) {
+  .footer-social {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+
+  .footer-social-link {
+    min-width: 124px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-social-link {
+    min-width: 112px;
+    padding: 0.5rem 0.7rem;
+  }
+}
